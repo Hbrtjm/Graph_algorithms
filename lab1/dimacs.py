@@ -9,7 +9,7 @@ def loadCNFFormula( name ):
      Returns (V,F)
      V -- highest variable number
      F -- list of clauses"""
-
+  
   V = 0
   L = []  
 
@@ -48,7 +48,8 @@ def loadWeightedGraph( name ):
     s = l.split()
     if(len(s) < 1): continue
     if( s[0] == "c" ):
-      continue
+        print(s[3])
+        continue
     elif( s[0] == "p" ):
       V = int(s[2])
     elif( s[0] == "e" ):
